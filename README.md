@@ -2,7 +2,7 @@
 
 I always find time-boxing daily todos a helpful constraint towards getting shit done.
 
-So I made this simple app for creating and managing timers for daily todos. You can save your timers, name them, and jot down notes and reminders for each timer you create.
+So I made this simple VanillaJS app for creating and managing timers for daily todos. You can save your timers, name them, and jot down notes and reminders for each timer you create.
 
 <img align="center" src="https://github.com/jermwatt/readme_gifs/blob/main/my_timers_demo.gif" height="325">
 
