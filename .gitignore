@@ -1,5 +1,6 @@
 **/.DS_Store
 node_modules/
+node_modules
 logs
 *.log
 .env
@@ -9,3 +10,4 @@ build/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
+out/
