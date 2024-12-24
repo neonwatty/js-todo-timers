@@ -16,3 +16,9 @@ npm run icon -i icon.png -i build
 ```bash
 npm run make
 ```
+
+### run in dev mode
+
+```bash
+electron .
+```
