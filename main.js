@@ -33,17 +33,17 @@ app.on("ready", () => {
   // Handle before-quit to detect quit source
   app.on("before-quit", (event) => {
     if (app.isQuiting) {
-      log("Quit action triggered from the Quit menu.");
-    } else {
       log("Quit action triggered externally (e.g., via Cmd+Q or Alt+F4).");
+    } else {
+      log("Quit action triggered from the Quit menu.");
       app.isQuiting = true;
       log("app isQuiting set to true");
     }
   });
 
-  const iconPath = path.join(__dirname, "icons/mac/icon.icns");
+  const iconPath = path.join(__dirname, "icon.png");
   const tray = new Tray(iconPath);
-  const win = new BrowserWindow({ icon: iconPath });
+  // const win = new BrowserWindow({ icon: iconPath });
   const contextMenu = Menu.buildFromTemplate([
     {
       label: "Show App",
@@ -67,7 +67,7 @@ app.on("ready", () => {
   ]);
 
   tray.setContextMenu(contextMenu);
-  tray.setToolTip("Timer App");
+  tray.setToolTip("Timer Todos App");
 
   tray.on("click", () => {
     log("Tray icon clicked");
