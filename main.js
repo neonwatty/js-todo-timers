@@ -41,7 +41,7 @@ app.on("ready", () => {
     }
   });
 
-  const iconPath = path.join(__dirname, "icon.png");
+  const iconPath = path.join(__dirname, "icons/png/512x512.png");
   const tray = new Tray(iconPath);
   // const win = new BrowserWindow({ icon: iconPath });
   const contextMenu = Menu.buildFromTemplate([
