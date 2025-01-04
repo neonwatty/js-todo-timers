@@ -3,7 +3,6 @@
     "@playwright/test": "^1.48.0",
     "@tauri-apps/cli": "^2.2.2",
     "@types/node": "^22.7.5",
-    "http-server": "^14.1.1",
     "prettier": "^3.3.3",
     "tailwindcss": "^3.4.13",
     "vite": "^6.0.7"
