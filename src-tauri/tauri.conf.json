@@ -2,12 +2,12 @@
   "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
   "productName": "js-todo-timers",
   "version": "0.1.0",
-  "identifier": "com.tauri.dev",
+  "identifier": "com.neonwatty.github.io.js-todo-timers",
   "build": {
-    "frontendDist": ".",
-    "devUrl": "http://localhost:5173",
     "beforeDevCommand": "npm run dev",
-    "beforeBuildCommand": "npm run build"
+    "beforeBuildCommand": "npm run build",
+    "devUrl": "http://localhost:5173",
+    "frontendDist": "../dist"
   },
   "app": {
     "windows": [
