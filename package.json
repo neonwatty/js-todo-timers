@@ -8,6 +8,7 @@
     "vite": "^6.0.7"
   },
   "scripts": {
+    "tauri": "tauri",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
