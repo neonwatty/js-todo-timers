@@ -8,9 +8,9 @@ So I made this simple VanillaJS app for creating and managing timers for daily t
 
 [Click here to use the app right now in your browser](https://neonwatty.github.io/todo_timers/).
 
-Built for desktop. 
+Built for desktop.
 
-Available as a Progressive Web App (PWA).  Install as shown below.
+Available as a Progressive Web App (PWA). Install as shown below.
 
 <img align="center" src="https://github.com/jermwatt/readme_gifs/blob/main/todo_pwa.gif" height="325">
 
