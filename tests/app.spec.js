@@ -13,7 +13,7 @@ test.beforeEach(async ({ page }) => {
   // go to page
   await page.goto("http://localhost:5173");
   page.on("console", (msg) =>
-    console.log(`Browser log: ${msg.type()}: ${msg.text()}`)
+    console.log(`Browser log: ${msg.type()}: ${msg.text()}`),
   );
 });
 
@@ -78,7 +78,7 @@ test("save timer name notes and verify persistence", async ({ page }) => {
 
   // check local storage
   const myTimer1ValueInit = await page.evaluate(() =>
-    JSON.parse(localStorage.getItem("todo-timers-app"))
+    JSON.parse(localStorage.getItem("todo-timers-app")),
   );
   expect(myTimer1ValueInit).toBe(null);
 
@@ -104,7 +104,7 @@ test("save timer name notes and verify persistence", async ({ page }) => {
 
   // check local storage
   const myTimer1ValuesBefore = await page.evaluate(
-    () => JSON.parse(localStorage.getItem("todo-timers-app"))["my-timer-1"]
+    () => JSON.parse(localStorage.getItem("todo-timers-app"))["my-timer-1"],
   );
   const myTimer1NameBefore = myTimer1ValuesBefore["timerName"];
   expect(myTimer1NameBefore.trim()).toBe(nameText);
@@ -130,7 +130,7 @@ test("save timer name notes and verify persistence", async ({ page }) => {
 
   // check local storage
   const myTimer1ValuesAfter = await page.evaluate(
-    () => JSON.parse(localStorage.getItem("todo-timers-app"))["my-timer-1"]
+    () => JSON.parse(localStorage.getItem("todo-timers-app"))["my-timer-1"],
   );
   const myTimer1NameAfter = myTimer1ValuesAfter["timerName"];
   expect(myTimer1NameAfter.trim()).toBe(nameText);
