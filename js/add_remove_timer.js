@@ -68,6 +68,8 @@ function createNewTimerDiv(id) {
                     id="hours-entry"
                     min="0"
                     value="0"
+                    inputmode="numeric"
+                    pattern="[0-9]*"  
                   />
                   <div id="hours-label">hours</div>
                 </div>
@@ -78,6 +80,8 @@ function createNewTimerDiv(id) {
                     id="minutes-entry"
                     min="0"
                     value="0"
+                    inputmode="numeric"
+                    pattern="[0-9]*"  
                   />
                   <div id="minutes-label">minutes</div>
                 </div>
@@ -88,6 +92,8 @@ function createNewTimerDiv(id) {
                     id="seconds-entry"
                     min="0"
                     value="0"
+                    inputmode="numeric"
+                    pattern="[0-9]*"
                   />
                   <div id="seconds-label">seconds</div>
                 </div>
@@ -127,6 +133,7 @@ function createNewTimerDiv(id) {
                   name="timer-name"
                   minlength="0"
                   maxlength="30"
+                  inputmode="text"
                   class="bg-slate-400 dark:bg-slate-600 text-slate-800 dark:text-slate-200 mb-2"
                 />
                 <label for="timer-notes">Notes:</label>
@@ -135,6 +142,7 @@ function createNewTimerDiv(id) {
                   id="timer-notes"
                   name="timer-notes"
                   rows=1
+                  inputmode="text"
                   class="h-full bg-slate-400 dark:bg-slate-600 text-slate-800 dark:text-slate-200 text-left"
                 ></textarea>
               </div>
